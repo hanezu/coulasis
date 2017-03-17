@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <style>
+  table, th , td  {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	padding: 5px;
+  }
+  table tr:nth-child(odd) {
+	background-color: #f1f1f1;
+  }
+  table tr:nth-child(even) {
+	background-color: #ffffff;
+  }
+  </style>
+
+  <body>
+	
+	<div ng-app="coulasis" ng-controller="indexController">
+	  <table>
+		<tr ng-repeat="t in times">
+		  <td ng-repeat="d in days">
+			{{ get_course(d, t) }}
+		  </td>
+		</tr>
+	  </table>
+	</div>
+	
+  </body>
+
+  <script>
+  var app = angular.module('coulasis', []);
+  app.controller('indexController', function($scope) {
+	$scope.courses = require('./data.json');
+	$scope.days = ["月","火","水","木","金"];
+	$scope.times = ["1","2","3","4","5"];
+	$scope.get_course = function(day, time) {
+	  result = []
+	  angular.forEach($scope.courses, function(course) {
+		if(course.day == day && course.time == time) {
+		  console.log("here!")
+		  result.push(course.name);
+		}
+	  }, result);
+	  if(result.length > 0) {
+	    return result[0];
+	  }
+	  return ""
+	};
+
+  });
+  </script>
+</html>
