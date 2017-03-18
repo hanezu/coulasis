@@ -19,9 +19,18 @@
 	
 	<div ng-app="coulasis" ng-controller="indexController">
 	  <table>
-		<tr ng-repeat="t in times">
+		<tr>
+		  <td> coulasis </td>
 		  <td ng-repeat="d in days">
-			{{ get_course(d, t) }}
+			{{d}}曜日
+		  </td>
+		</tr>
+		<tr ng-repeat="t in times">
+		  <td> {{t}} 限 </td>
+		  <td ng-repeat="d in days">
+			<div ng-repeat="c in get_course(d, t)">
+			  <a href="{{c.url}}"> {{ c.name }} </a>
+			</div>
 		  </td>
 		</tr>
 	  </table>
@@ -31,22 +40,20 @@
 
   <script>
   var app = angular.module('coulasis', []);
-  app.controller('indexController', function($scope) {
-	$scope.courses = require('./data.json');
+  app.controller('indexController', function($scope, $http) {
+	$http.get('./data.json').success(function(data) {
+	   $scope.courses = data;
+	});
 	$scope.days = ["月","火","水","木","金"];
 	$scope.times = ["1","2","3","4","5"];
 	$scope.get_course = function(day, time) {
-	  result = []
+	  var courses = []
 	  angular.forEach($scope.courses, function(course) {
 		if(course.day == day && course.time == time) {
-		  console.log("here!")
-		  result.push(course.name);
+		  courses.push(course);
 		}
-	  }, result);
-	  if(result.length > 0) {
-	    return result[0];
-	  }
-	  return ""
+	  }, courses);
+	  return courses;
 	};
 
   });

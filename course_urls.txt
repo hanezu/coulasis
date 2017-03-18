@@ -1,0 +1,10 @@
+# put the url of the course page you would like to choose.
+# put a '#' to comment it out.
+# urls should look like these.
+
+https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4412
+https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3928
+https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3926
+https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3968
+https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3958
+https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3969
