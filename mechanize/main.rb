@@ -14,7 +14,7 @@ end
 def get_course_urls
   buffer = []
   File.open("../course_urls.txt").each do |line|
-	buffer << line unless line =~ /^ *#/
+	buffer << line unless line =~ /^ *#/ or line.strip.length == 0
   end
   buffer
 end
