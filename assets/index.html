@@ -41,8 +41,13 @@
   <script>
   var app = angular.module('coulasis', []);
   app.controller('indexController', function($scope, $http) {
-	$http.get('./data.json').success(function(data) {
-	   $scope.courses = data;
+	$http({
+	  method: 'GET',
+	  url: 'data.json'
+	}).then(function successCallback(response) {
+	   $scope.courses = response.data;
+	}, function errorCallback(response) {
+	  console.log("error fetching data");
 	});
 	$scope.days = ["月","火","水","木","金"];
 	$scope.times = ["1","2","3","4","5"];
