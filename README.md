@@ -1,6 +1,8 @@
 # Coulasis -- create course schedule from kulasis
 
-A Ruby Mechanize scraper + Angular app for auto-create course schedule of Kyoto Univ Kulasis. 
+A Ruby Mechanize scraper + Angular app for auto-creating course schedule of Kyoto Univ Kulasis. 
+
+Now support Science and Engineering courses.
 
 # Quick Start
 
