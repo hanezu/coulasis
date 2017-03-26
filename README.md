@@ -14,7 +14,7 @@ Now support Science and Engineering courses.
 
 4. go to assets (`cd assets`) and run the Angular application (for example, on your local host). You can run it in anyway you like, and simple command such as `python -m SimpleHTTPServer` is enough.
 
-5. Go to your local host and check your course schedule! (`http://0.0.0.0:8000/` if you are using SimpleHTTPServer)
+5. Go to the app (your local host) and check your course schedule! (`http://0.0.0.0:8000/` if you are using SimpleHTTPServer)
 
 # Update your Schedule
 
