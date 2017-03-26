@@ -17,3 +17,5 @@ A Ruby Mechanize scraper + Angular app for auto-create course schedule of Kyoto 
 # Update your Schedule
 
 To update, change the urls and go through steps 3~5.
+
+![Schedule Sample](https://raw.githubusercontent.com/hanezu/coulasis/master/img/example_course_schedule.jpeg)
