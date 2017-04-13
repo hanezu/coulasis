@@ -4,14 +4,18 @@
 
 https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4412
 https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3928
-https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3926
+# https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3926
 # https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3968
 https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3958
 # https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3969
 https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4047
 https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4160
 https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3960
-http://www.t.kyoto-u.ac.jp/syllabus-s/?mode=subject&lang=ja&year=2017&b=6&c=91160
-http://www.t.kyoto-u.ac.jp/syllabus-s/?mode=subject&lang=ja&year=2017&b=6&c=91030
-http://www.t.kyoto-u.ac.jp/syllabus-s/?mode=subject&lang=ja&year=2017&b=6&c=91090
+
+https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4244
+https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4045
+
+# http://www.t.kyoto-u.ac.jp/syllabus-s/?mode=subject&lang=ja&year=2017&b=6&c=91160
+# http://www.t.kyoto-u.ac.jp/syllabus-s/?mode=subject&lang=ja&year=2017&b=6&c=91030
+# http://www.t.kyoto-u.ac.jp/syllabus-s/?mode=subject&lang=ja&year=2017&b=6&c=91090
 http://www.t.kyoto-u.ac.jp/syllabus-s/?mode=subject&lang=ja&year=2017&b=6&c=90980

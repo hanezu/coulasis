@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" >
+  </head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
   <style>
   table, th , td  {
@@ -52,7 +55,7 @@
 	$scope.days = ["月","火","水","木","金"];
 	$scope.times = ["1","2","3","4","5"];
 	$scope.get_course = function(day, time) {
-	  var courses = []
+	  var courses = [];
 	  angular.forEach($scope.courses, function(course) {
 		if(course.day == day && course.time == time) {
 		  courses.push(course);
