@@ -13,7 +13,7 @@ https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4160
 https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=3960
 
 https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4244
-https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4045
+# https://www.k.kyoto-u.ac.jp/student/u/s/syllabus/detail?no=4045
 
 # http://www.t.kyoto-u.ac.jp/syllabus-s/?mode=subject&lang=ja&year=2017&b=6&c=91160
 # http://www.t.kyoto-u.ac.jp/syllabus-s/?mode=subject&lang=ja&year=2017&b=6&c=91030

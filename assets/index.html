@@ -16,6 +16,10 @@
   table tr:nth-child(even) {
 	background-color: #ffffff;
   }
+  p.classroom {
+	margin: 0px;
+	color: #333333;
+  }
   </style>
 
   <body>
@@ -33,6 +37,7 @@
 		  <td ng-repeat="d in days">
 			<div ng-repeat="c in get_course(d, t)">
 			  <a href="{{c.url}}"> {{ c.name }} </a>
+			  <p class="classroom"> {{ c.room }}</p>
 			</div>
 		  </td>
 		</tr>

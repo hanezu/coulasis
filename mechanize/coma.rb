@@ -7,6 +7,7 @@ class Coma
     new_coma = -> subcoma do
       coma_times = subcoma.find_time_in page
       name = subcoma.find_name_in page
+      room = subcoma.find_room_in page
 	  puts name.strip
       coma_arr = []
       coma_times.each do |parse_param|
@@ -14,7 +15,8 @@ class Coma
             name: name.strip,
             day: parse_param[0],
             time: parse_param[1],
-            url: url
+            url: url,
+            room: room.strip
         }
       end
       coma_arr
@@ -56,6 +58,10 @@ class ScienceComa < Coma
     Coma.find(page, '(科目名)')
   end
 
+  def self.find_room_in page
+    Coma.find(page, '(教室)')
+  end
+
 end
 
 class EngineeringComa < Coma
@@ -81,6 +87,11 @@ class EngineeringComa < Coma
       return t.text.split(':')[-1].strip if t.text =~ /授業科目名/
     end
     raise ParseComaError, "find name failed"
+  end
+
+  def self.find_room_in page
+    #TODO implement
+    return ""
   end
 end
 
